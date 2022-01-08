@@ -1,0 +1,23 @@
+<script>
+	var ano = 2022;
+	var idade1 = 45;
+	var idade2 = 42;
+	var idade3 = 36;
+	var idadeEsposa = 41;
+	var idadeCasalFilhos = 28;
+
+	var idadeTotal = idade1 + idade2 + idade3;
+	var mediaIdades = idadeTotal/3;
+	var diferencaIdade = idade1 - idadeEsposa;
+	var valorGeracoes = Math.round(ano/idadeCasalFilhos);
+
+	document.write("Olá mundo!<br>");
+	document.write("esse é meu segundo programa.<br>");
+	document.write("Minha idade é: " + idade1 + "<br>");
+	document.write("Eu nasci em: " + (ano - idade1));
+	document.write("<br>A soma das nossas idades é: <br>");
+	document.write(idadeTotal + " anos.<br>");
+	document.write("A média das nossas idades é: " + mediaIdades + "<br>");
+	document.write("Diferença da minha idade com a da minha esposa é de: " + diferencaIdade + " anos.<br>");
+	document.write("O valor médio de gerações desde o ano 0 é de: " + valorGeracoes + " gerações.<br>");
+</script>

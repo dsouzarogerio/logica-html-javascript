@@ -1,0 +1,31 @@
+<h3><big>Álcool ou Gasolina?</big></h3>
+<script>
+	var tanqueCombustivel = 40;
+	var distanciaComGasolina = 480;
+	var distanciaComAlcool = 300;
+	var mediaConsumoGasolina = 480/40;
+	var mediaConsumoAlcool = 300/40;
+	var precoAlcool = 4.60;
+	var precoGasolina = 6.90;
+	var valorMedioGasolina = (precoGasolina/mediaConsumoGasolina).toFixed(2);
+	var valorMedioAlcool = (precoAlcool/mediaConsumoAlcool).toFixed(2);
+
+	//Esta função mostra a frase no navegador e chama
+	//o método pularLinha()
+	function mostrarFrase(frase){
+		document.write("<big>" + frase + "</big>");
+		pularLinha();
+		console.log("Esta mensagem é para o programador.")
+	}
+
+	//Esta função pula a linha após a escrita da frase
+	function pularLinha(){
+		document.write("<br>" + "<hr>" + "<br>");
+	}
+
+	mostrarFrase("Media consumo de combustível - Gasolina: " + mediaConsumoGasolina.toFixed(2) + "km/l");
+	mostrarFrase("Média consumo de combustível - Álcool: " + mediaConsumoAlcool.toFixed(2) + "km/l");
+	mostrarFrase("Preço médio do consumo de Gasolina - R$/km = " + valorMedioGasolina);
+	mostrarFrase("Preço médio do consumo de Álcool - R$/km = " + valorMedioAlcool);
+
+</script>
